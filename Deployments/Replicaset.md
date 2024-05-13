@@ -69,7 +69,7 @@ If the pods were successfully generated we will see something like this
 
 <div style="text-align:center"><img src="./images/2.png" width ="500"></div>
 
-## View the Availablity of pods
+## View the Availability of pods
 
 Now if we delete any of the pods ,we will see within a second it will generate a new pod and the total number of pods will be remain same as 3.
 
