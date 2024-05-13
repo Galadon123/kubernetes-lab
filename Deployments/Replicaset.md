@@ -37,7 +37,7 @@ Press ``ESC`` then type `:wq` then press `Enter` to save and exit from vim
 
 #### Creating Replicaset using kubectl command (OPTIONAL)
 
-We can also generate the replicaset without using a YAML manifest by using the kubectl create command with the appropriate flags and parameters.
+We can also generate the replicaset without using a YAML manifest file.To create the replicaset use the kubectl command with the appropriate flags and parameters.
 
 ```
 kubectl create replicaset nginx-replicaset --image=nginx --replicas=3 --port=80
