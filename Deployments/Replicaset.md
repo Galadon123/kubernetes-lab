@@ -2,7 +2,7 @@
 
 We will demonastrate the ReplicaSet configuration by using nginx image,to ensure that a specified number of NGNIX pods are running at all times and the pods are always available in the kubernetes cluster.
 
-### 1.Create a YAML Manifest for ReplicaSet configuration  using `vim` or `nano`
+### Create a YAML Manifest for ReplicaSet configuration  using `vim` or `nano`
 
 To install vim try this 
 ```
@@ -35,7 +35,15 @@ spec:
 ```
 Press ``ESC`` then type `:wq` then press `Enter` to save and exit from vim
 
-## 2. Apply the Manifest
+#### Creating Replicaset using kubectl command (OPTIONAL)
+
+We can also generate the replicaset without using a YAML manifest by using the kubectl create command with the appropriate flags and parameters.
+
+```
+kubectl create replicaset nginx-replicaset --image=nginx --replicas=3 --port=80
+```
+
+## Apply the Manifest
 
 Apply the YAML manifest using the ``kubectl apply`` command
 
@@ -63,6 +71,6 @@ If the pods were successfully generated we will see something like this
 
 ## View the Availablity of pods
 
-Now if we delete any of the pods ,we will see within a second it will generate a new pod and the total number of pods will be remain same 3.
+Now if we delete any of the pods ,we will see within a second it will generate a new pod and the total number of pods will be remain same as 3.
 
 <div style="text-align:center"><img src="./images/4.png" width ="500"></div>
