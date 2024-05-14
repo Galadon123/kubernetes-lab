@@ -58,6 +58,12 @@ Expected output:
 
 <div style="text-align:center"><img src="./images/5.png" ></div>
 
+
+To monitor the rollout history (optional)
+
+```
+kubectl rollout history deployment/myapp-deployment
+```
 ## Rollback the Update
 
 If issues arise after the rollout and we need to rollback to the previous state, we can use the kubectl rollout undo command to go back to the previous version.
